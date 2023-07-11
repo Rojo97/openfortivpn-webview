@@ -1,6 +1,11 @@
 {
   "name": "openfortivpn-webview",
   "version": "1.1.0",
+  "homepage": "undefined",
+  "author": {
+    "name": "undefined",
+    "email": "undefined@undefined.undefined"
+  },
   "scripts": {
     "start": "electron index.js",
     "dist": "electron-builder"
