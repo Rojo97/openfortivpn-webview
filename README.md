@@ -80,3 +80,24 @@ to npm using `--`, like this:
 ```sh
 npm start myvpnhost -- --proxy-server=proxy.example.com:8080
 ```
+
+## How to build
+
+Install `npm` and run the following command:
+```shell
+npm install
+```
+
+This is enough to launch the application with:
+```shell
+npm start
+```
+
+You can also build a package for your system using `electron-builder`.
+For example, to build an `deb` for Linux, run:
+```shell
+./node_modules/.bin/electron-builder --linux deb
+```
+
+This will generate a portable `deb` in `dist/`.
+See the documentation of `electron-builder` for more info.
