@@ -5,14 +5,6 @@ The application will simply open the SAML page to let you sign in.
 As soon as the `SVPNCOOKIE` is set, the application will print it to
 stdout and exit.
 
-The application comes in two flavors:
- - [openfortivpn-webview-qt](openfortivpn-webview-qt/)
- - [openfortivpn-webview-electron](openfortivpn-webview-electron/)
-
-They should be equivalent, but `openfortivpn-webview-qt` may have
-some issues with some SAML providers.
-
-
 ## Usage
 
 Obtain `SVPNCOOKIE` for host `vpn-gateway`:
