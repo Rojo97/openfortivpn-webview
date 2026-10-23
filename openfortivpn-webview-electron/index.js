@@ -2,7 +2,7 @@ const { app, BrowserWindow, session, Menu } = require('electron');
 const yargs = require('yargs/yargs')
 const { hideBin } = require('yargs/helpers')
 
-const defaultUrlRegex = '/sslvpn/portal\\.html';
+const defaultUrlRegex = '/sslvpn/portal';
 const cookieName = 'SVPNCOOKIE';
 
 const parser = yargs(hideBin(process.argv))
