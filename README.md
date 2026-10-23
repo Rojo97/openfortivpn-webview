@@ -5,14 +5,6 @@ The application will simply open the SAML page to let you sign in.
 As soon as the `SVPNCOOKIE` is set, the application will print it to
 stdout and exit.
 
-The application comes in two flavors:
- - [openfortivpn-webview-qt](openfortivpn-webview-qt/)
- - [openfortivpn-webview-electron](openfortivpn-webview-electron/)
-
-They should be equivalent, but `openfortivpn-webview-qt` may have
-some issues with some SAML providers.
-
-
 ## Usage
 
 Obtain `SVPNCOOKIE` for host `vpn-gateway`:
@@ -80,3 +72,24 @@ to npm using `--`, like this:
 ```sh
 npm start myvpnhost -- --proxy-server=proxy.example.com:8080
 ```
+
+## How to build
+
+Install `npm` and run the following command:
+```shell
+npm install
+```
+
+This is enough to launch the application with:
+```shell
+npm start
+```
+
+You can also build a package for your system using `electron-builder`.
+For example, to build an `deb` for Linux, run:
+```shell
+./node_modules/.bin/electron-builder --linux deb
+```
+
+This will generate a portable `deb` in `dist/`.
+See the documentation of `electron-builder` for more info.
